@@ -1,0 +1,149 @@
+/*mudei as cores e um espçamento por conta do header fixo*/
+body {
+    background-color: rgb(2, 2, 10);
+    color: white;
+    padding-top: 80px;
+}
+
+/*imagem de fundo no header,uma borda,além de deixalo fixo sempre na tela acima de qualquer outro elemento*/
+header {
+    background-image: url(../img/fundo/fundo.jpg);
+    border: rgb(0, 0, 0) 10px solid;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    gap: 20%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+h1 i {
+    color: blue;
+}
+
+/*alinhei os itens do menue coloquei um espaçamento*/
+.select ul {
+    display: flex;
+    gap: 20px;
+}
+
+li {
+    display: inline;
+    font-size: 20px;
+}
+
+/*estilizei a caixa de pesquisa,além de arredondar os cantos dos inputs*/
+.caixa-pesquisa {
+    border: rgb(5, 4, 39) 10px solid;
+    border-radius: 20px;
+    background-color: rgb(5, 4, 39);
+    color: rgb(247, 231, 5);
+}
+
+input {
+    border-radius: 10px;
+}
+
+/*determinei uma cor para os links e uma para quando o mouse passar por cima*/
+a {
+    color: white;
+}
+
+a:hover {
+    color: rgb(37, 110, 219);
+}
+
+/*estilizei as imagens do catalogo e e coloquei um efeito de transição quando o mouse passa por cima para aparecer o span e outros efeitos*/
+img {
+    width: 200px;
+    display: inline;
+    border-radius: 20px;
+}
+
+.card {
+    position: relative;
+    width: 200px;
+    transition: 0.2;
+}
+
+.card img {
+    display: flex;
+    transition: 0.2s;
+}
+
+.info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 105%;
+    background: rgba(45, 16, 207, 0.7);
+    padding: 10px;
+    opacity: 0;
+    transition: 0.3s ease;
+    border-radius: 20px;
+}
+
+.card:hover .info {
+    opacity: 1;
+}
+
+.card:hover img {
+    zoom: 105%;
+    border-radius: 30px;
+    box-shadow: rgb(37, 110, 219) 0px 0px 40px;
+}
+
+/*separei o catalogo em seções e coloquei um espaçamento entre elas e tornei os titulos das seções fixos e destacados*/
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+main h2 {
+    width: 100%;
+    display: block;
+    padding: 20px;
+    box-shadow: rgba(64, 224, 208, 0.247) 0px 0px 10px;
+}
+
+/*ajustei o tamanho das imagens de redes sociais e coloquei um efeito de sombra para destacar elas*/
+footer img {
+    width: 54px;
+    box-shadow: rgba(88, 139, 216, 0.253) 0px 0px 20px;
+}
+
+/*ajustei o layout do rodapé para ficar com um espaçamento entre os itens e coloquei um espaçamento interno para o rodapé*/
+.end-container {
+    display: flex;
+    gap: 250px;
+}
+
+.box {
+    width: 50%;
+    padding: 20px;
+}
+
+.full {
+    width: 100%;
+    display: flex;
+    padding: 30px;
+    gap: 200px;
+}
+
+footer {
+    background-color: black;
+    margin-top: 50px;
+}
