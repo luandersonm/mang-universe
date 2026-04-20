@@ -3,6 +3,11 @@ body {
     background-color: rgb(2, 2, 10);
     color: white;
     padding-top: 80px;
+
+}
+h2 img{
+    width: 50px;
+    vertical-align: middle;
 }
 
 /*imagem de fundo no header,uma borda,além de deixalo fixo sempre na tela acima de qualquer outro elemento*/
@@ -21,16 +26,27 @@ header {
     width: 100%;
     z-index: 1000;
 }
+header img{
+    width: 40px;
+    vertical-align: middle;
+}
+li img{
+    width: 40px;
+    filter: invert(1);
+}
+h2 img{
+    filter: invert(1);
+}
+.select img{
+    color: white;
+}
+
 
 @media (max-width: 600px) {
     header {
         flex-direction: column;
         align-items: flex-start;
     }
-}
-
-h1 i {
-    color: blue;
 }
 
 /*alinhei os itens do menue coloquei um espaçamento*/
@@ -54,11 +70,12 @@ li {
 
 input {
     border-radius: 10px;
+    height: 30px;
 }
 
 /*determinei uma cor para os links e uma para quando o mouse passar por cima*/
-a {
-    color: white;
+a{
+    color: rgb(218, 218, 218);
 }
 
 a:hover {
