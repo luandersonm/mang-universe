@@ -159,10 +159,13 @@ footer {
 
 /*responsivo*/
 
-@media(max-width: 320px) {
+@media(min-width: 320px) {
     .end-container {
         display: block;
     }
+}
+
+@media(max-width: 500px) {
     body{
     overflow-x: hidden;
 }
@@ -201,12 +204,6 @@ section{
 @media(min-width: 100px) {
     .card img {
         width: 11rem;
-    }
-}
-
-@media(min-width:600px) {
-    section img {
-        flex-direction: column;
     }
 }
 
