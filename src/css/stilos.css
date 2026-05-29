@@ -36,10 +36,6 @@ h2 img {
     filter: invert(1);
 }
 
-.select img {
-    color: white;
-}
-
 /*alinhei os itens do menue coloquei um espaçamento*/
 .select ul {
     display: flex;
@@ -56,7 +52,6 @@ li {
     border: rgb(5, 4, 39) 10px solid;
     border-radius: 20px;
     background-color: rgb(5, 4, 39);
-    color: rgb(247, 231, 5);
 }
 
 input {
