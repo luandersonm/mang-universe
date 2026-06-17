@@ -160,7 +160,7 @@ footer {
     }
 }
 
-@media(max-width: 500px) {
+@media(max-width: 1166px) {
     body{
     overflow-x: hidden;
 }
@@ -202,7 +202,7 @@ section{
     }
 }
 
-@media(max-width:890px) {
+@media(max-width:1354px) {
     header {
         flex-direction: column;
         text-align: center;
