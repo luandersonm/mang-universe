@@ -58,6 +58,26 @@ input {
     border-radius: 10px;
     height: 30px;
 }
+#select-generos{
+    width: 40px;
+    height: 40px;
+
+    appearance: none;
+    border: none;
+
+    background: url("../img/section.icons/lupa.png") center/contain no-repeat;
+    color: transparent;
+    cursor: pointer;
+    background-color: transparent;
+    box-shadow:rgb(134, 28, 28) 0px 0px 10px;
+    border-radius: 10px;
+}
+#select-generos option{
+    background-color: rgb(13, 15, 150);
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
 
 /*determinei uma cor para os links e uma para quando o mouse passar por cima*/
 a {
